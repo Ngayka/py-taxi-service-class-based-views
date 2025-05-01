@@ -8,7 +8,7 @@
   {% for driver in car.drivers.all %}
     <hr>
 <p><strong>username:</strong> {{ driver.username }}</p>
-    <p><strong>name</strong> {{ driver.first_name }} {{ driver.second_name }}</p>
+    <p><strong>name</strong> {{ driver.first_name }} {{ driver.last_name }}</p>
     {% empty %}
     <p>Unfortunately we still don`t have drivers on this car</p>
   {% endfor %}

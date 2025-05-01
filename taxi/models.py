@@ -25,4 +25,4 @@ class Car(models.Model):
     )
     drivers = models.ManyToManyField(Driver, related_name="cars")
     def get_absolute_url(self):
-        return reverse("taxi:car-detail", args=[self.id])
+        return reverse("taxi:car-detail", args=str([self.id]))
